@@ -12,6 +12,7 @@
           <li><router-link to="/music">音乐</router-link></li>
           <li><router-link to="/luotianyi">洛天依</router-link></li>
           <li><router-link to="/chat">AI聊天</router-link></li>
+          <li><router-link to="/ecommerce-chat">电商AI智能体</router-link></li>
         </ul>
         <div class="burger" @click="toggleNav">
           <div class="line1"></div>
@@ -222,6 +223,8 @@
               <li><router-link to="/music">音乐</router-link></li>
               <li><router-link to="/luotianyi">洛天依</router-link></li>
               <li><router-link to="/chat">AI聊天</router-link></li>
+              <li><router-link to="/ecommerce-chat">电商AI智能体</router-link></li>
+              
             </ul>
           </div>
           <div class="footer-social">
@@ -315,6 +318,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
 /* 定义初音未来主题色变量 */
 :root {
   --miku-teal: #39c5bb;

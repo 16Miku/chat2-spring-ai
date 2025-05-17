@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // 导入需要作为路由组件渲染的组件
 import ChatView from '../views/ChatView.vue'
 import HomePage from '../views/HomePage.vue'
+import EcommerceAIChatView from '../views/EcommerceAIChatView.vue' // <--- 添加这行导入
 
 // 创建路由实例
 const router = createRouter({
@@ -36,6 +37,11 @@ const router = createRouter({
       path: '/luotianyi',
       name: 'luotianyi',
       component: () => import('../views/LuoTianYiView.vue')
+    },
+    {
+      path: '/ecommerce-chat', // 与 router-link 中的 'to' 属性匹配
+      name: 'ecommerce-chat',
+      component: EcommerceAIChatView
     }
   ]
 })
